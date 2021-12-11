@@ -1,0 +1,49 @@
+<mjml>
+  <mj-head>
+    <mj-title>Sign in to Magiclytics</mj-title>
+    <mj-preview>Click to sign in</mj-preview>
+    <mj-font name="Gilroy" href="http://influencer-tool-web.s3-website.us-east-2.amazonaws.com/fonts/gilroy/stylesheet.css" />
+    <mj-attributes>
+      <mj-all font-family="'Gilroy', Helvetica, Arial, sans-serif"></mj-all>
+      <mj-text font-weight="400" font-size="16px" color="#20295A" line-height="24px" font-family="'Gilroy', Helvetica, Arial, sans-serif"></mj-text>
+    </mj-attributes>
+    <mj-style inline="inline">
+      .text-link {
+      color: #0D8FE6
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#E9EFF4" width="600px">
+    <mj-section full-width="full-width" background-color="#20295A" padding-bottom="0">
+      <mj-column width="100%">
+        <mj-image src="http://influencer-tool-web.s3-website.us-east-2.amazonaws.com/email-assets/logo.png" alt="" align="center" width="145px" padding-bottom="60px" />
+        <mj-image src="http://influencer-tool-web.s3-website.us-east-2.amazonaws.com/email-assets/banner-top.png" width="600px" alt="" padding="0" />
+      </mj-column>
+    </mj-section>
+    <mj-hero background-url="http://influencer-tool-web.s3-website.us-east-2.amazonaws.com/email-assets/banner-bottom.png" mode="fixed-height" height="162px" background-width="600px" background-height="162px">
+      <mj-text padding-top="30px" color="#ffffff" align="center" font-size="34px" line-height="38px" font-weight="700" padding-bottom="0">
+        Welcome to Magiclytics
+      </mj-text>
+      <mj-text color="#ffffff" align="center" padding-left="100px" padding-right="100px">
+        The tool which responses to which of these influencers match best the audience</mj-text>
+    </mj-hero>
+    <mj-wrapper padding-top="0" padding-bottom="80px">
+      <mj-section background-color="#ffffff" padding-left="40px" padding-right="40px" padding-top="60px" padding-bottom="60px">
+        <mj-column width="100%">
+          <mj-text font-size="20px">
+            Hi {{ username }},
+          </mj-text>
+          <mj-text>
+            Welcome back to Magiclytics. Please, click on the link below to sign in
+          </mj-text>
+
+          <mj-text align="center" padding-bottom="100px"><a href="{{ link }}" class="text-link">Sign me in</a></mj-text>
+
+          <mj-text font-size="14px">
+            This link will expire in 5 minutes. If you have questions, we’re here to help.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
